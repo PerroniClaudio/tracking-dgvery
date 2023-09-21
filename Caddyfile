@@ -1,0 +1,5 @@
+http://127.0.0.1 {
+    reverse_proxy tracking-1:3001 tracking-2:4000 tracking-3:8080 {
+        header_down Strict-Transport-Security max-age=31536000
+    }
+}
